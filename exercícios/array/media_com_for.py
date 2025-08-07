@@ -7,4 +7,4 @@ for nota in notas:
     SOMA += nota
 
 MEDIA = SOMA / len(notas)
-print(f"🎓 A média dessas notas babadeiras foi: {MEDIA}")
+print(f"💋 a média dessas notas babadeiras foi: {MEDIA}")
