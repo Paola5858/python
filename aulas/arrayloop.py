@@ -5,7 +5,7 @@ nome = array.array('i', [1, 2, 3, 4, 5])
 
 nome2 = ['a', 'b', 'c']
 
-print(nome2[3])
+print(nome2[2])
 print(nome[1])
 
 teste = (1,2,3,4)
