@@ -1,9 +1,10 @@
 """ oii gataa! bora calcular a média de 5 notas? """
+
 notas = [8, 7.5, 10, 6, 9]
-soma = 0
+SOMA = 0
 
 for nota in notas:
-    soma += nota
+    SOMA += nota
 
-media = soma / len(notas)
+media = SOMA / len(notas)
 print(f"🎓 A média dessas notas babadeiras foi: {media}")
