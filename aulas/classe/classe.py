@@ -10,12 +10,10 @@ class Pessoa:
         """Exibe nome e idade da pessoa."""
         print(f"oiee meu nome é {self.nome} e tenho {self.idade} anos")
 
-
 paola = Pessoa()
 paola.nome = "Paola"
 paola.idade = 17
 paola.apresenta()
-
 
 class Animal:
     """Classe que representa um animal com espécie e família."""
@@ -30,4 +28,3 @@ class Animal:
 
 cachorro = Animal("canis familiaris", "canidae")
 cachorro.apresenta()
-
