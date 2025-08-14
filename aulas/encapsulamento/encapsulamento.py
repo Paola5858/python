@@ -2,19 +2,10 @@ class Professor:
     _Nome = None
     __Salario = None
 
-class ProfSenai(Professor):
-    def __init__(self, nome, salario):
-        self._Nome = nome
-        self.__Salario = salario
+professor1 = Professor
 
-    def get_nome(self):
-        return self._Nome
+professor1._Nome = "Fabiano"
+professor1.__Salario = 5000
 
-    def get_salario(self):
-        return self.__Salario
-
-    def set_salario(self, novo_salario):
-        if novo_salario > 0:
-            self.__Salario = novo_salario
-        else:
-            raise ValueError("Salário deve ser positivo")
+print(professor1._Nome)
+print(professor1.__Salario)
