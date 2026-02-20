@@ -1,14 +1,22 @@
-"""programa simples para somar dois números """
+"""
+Programa simples para somar dois números
+Autora: Paola Soares Machado
+"""
 
-# feito com glitter e lógica por @paolakskj 💋
 
-print("Vamos somar dois números?")
-# Pede dois números ao usuário
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
+def somar(num1: float, num2: float) -> float:
+    """Retorna a soma de dois números."""
+    return num1 + num2
 
-# Calcula a soma
-soma = num1 + num2
 
-# Mostra o resultado
-print(f"A soma de {num1} + {num2} é {soma}")
+if __name__ == "__main__":
+    print("Vamos somar dois números?")
+    try:
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        resultado = somar(num1, num2)
+        print(f"\n💋 A soma de {num1} + {num2} é {resultado}")
+    except ValueError:
+        print("❌ Digite números válidos, diva!")
+
+# Feito com glitter e lógica por Paola 💋🎀

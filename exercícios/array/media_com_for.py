@@ -1,10 +1,21 @@
-""" oii gataa! bora calcular a média de 5 notas? """
+"""
+Oii gataa! Bora calcular a média de notas?
+Autora: Paola Soares Machado
+"""
+from typing import List
 
-notas = [8, 7.5, 10, 6, 9]
-SOMA = 0
 
-for nota in notas:
-    SOMA += nota
+def calcular_media_com_for(notas: List[float]) -> float:
+    """Calcula a média de uma lista de notas usando for."""
+    soma = 0
+    for nota in notas:
+        soma += nota
+    return soma / len(notas)
 
-MEDIA = SOMA / len(notas)
-print(f"💋 a média dessas notas babadeiras foi: {MEDIA}")
+
+if __name__ == "__main__":
+    notas = [8, 7.5, 10, 6, 9]
+    media = calcular_media_com_for(notas)
+    print(f"💋 A média dessas notas babadeiras foi: {media:.2f}")
+
+# Feito com glitter e lógica por Paola 💋🎀

@@ -1,18 +1,29 @@
-"""representa um celular com marca, modelo e armazenamento."""
-class Celular:
+"""
+Representa um celular com marca, modelo e armazenamento
+Autora: Paola Soares Machado
+"""
 
-    def __init__(self, marca, modelo, armazenamento):
+
+class Celular:
+    """Classe que representa um celular."""
+    
+    def __init__(self, marca: str, modelo: str, armazenamento: int):
         self.marca = marca
         self.modelo = modelo
         self.armazenamento = armazenamento
 
-    def mostrar_info(self):
-        print(f"celular: {self.marca} {self.modelo}")
-        print(f"armazenamento: {self.armazenamento}GB")
+    def mostrar_info(self) -> None:
+        """Exibe informações do celular."""
+        print(f"📱 Celular: {self.marca} {self.modelo}")
+        print(f"💾 Armazenamento: {self.armazenamento}GB")
+    
+    def __str__(self) -> str:
+        return f"{self.marca} {self.modelo} ({self.armazenamento}GB)"
 
 
-# criando o objeto
-meu_celular = Celular("Samsung", "Galaxy A54", 128)
+if __name__ == "__main__":
+    print("\n💋 Meu celular:\n")
+    meu_celular = Celular("Samsung", "Galaxy A54", 128)
+    meu_celular.mostrar_info()
 
-# exibindo info
-meu_celular.mostrar_info()
+# Feito com glitter e lógica por Paola 💋🎀
