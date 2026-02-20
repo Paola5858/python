@@ -1,8 +1,0 @@
-# Laboratório Python - Paola
-# Este projeto usa apenas a biblioteca padrão do Python 3.x
-# Nenhuma dependência externa é necessária no momento
-
-# Para desenvolvimento futuro, você pode adicionar:
-# pytest>=7.0.0  # para testes
-# black>=22.0.0  # para formatação de código
-# mypy>=0.950    # para verificação de tipos

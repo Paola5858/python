@@ -1,5 +1,9 @@
 # Laboratório de Python da Paola 💻✨
 
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![Tests](https://img.shields.io/badge/tests-pytest-green.svg)
+![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)
+
 Repositório onde eu guardo meus experimentos de Python: dos primeiros `print()` até orientação a objetos, enum e relações entre classes.
 
 Não é "aquele" projeto gigante, é mais um raio-x da minha evolução no código.
@@ -52,24 +56,49 @@ cd python
 **Rodar alguns exemplos:**
 
 ```bash
+# Menu interativo (recomendado)
+python main.py
+
 # Fundamentos
 python exercícios/intro-python/tabuada.py
+# Saída: Exibe tabuada de 1 a 10 do número digitado
+
 python exercícios/intro-python/media.py
+# Saída: Calcula média e mostra se aprovado (≥7) ou reprovado
 
 # Arrays
 python exercícios/array/media_com_for.py
-python exercícios/array/tabuada_com_for.py
+# Saída: 💋 A média dessas notas babadeiras foi: 8.10
+
+python exercícios/array/pares_com_for.py
+# Saída: Filtra e exibe apenas números pares da lista
 
 # POO
 python exercícios/classe/poliformismo.py
+# Saída: Calcula áreas de diferentes formas geométricas
+
 python exercícios/classe/enum.py
+# Saída: Demonstra fluxo de pedido com estados (Enum)
+
 python exercícios/classe/ambiente.py
+# Saída: Sistema de controle de acesso (associação)
 
 # Herança
 python aulas/relacionamentos/heranca.py
+# Saída: 💋 Paola, 18 anos | Curso: Informática
+```
 
-# Ou rode o menu principal:
-python main.py
+**Rodar testes:**
+
+```bash
+# Instalar dependências de desenvolvimento
+pip install -r requirements-dev.txt
+
+# Executar todos os testes
+pytest
+
+# Executar com cobertura
+pytest --cov=exercícios --cov=aulas
 ```
 
 ## Por que esse repositório existe?
@@ -90,6 +119,8 @@ Porque eu não estudo só pra prova. Uso esses exercícios pra:
 - ✅ Padrões de POO aplicados (herança, polimorfismo, encapsulamento)
 - ✅ Uso de Enum para estados
 - ✅ Código limpo e legível
+- ✅ Testes automatizados com pytest
+- ✅ Separação de dependências (prod/dev)
 
 ---
 
